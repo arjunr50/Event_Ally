@@ -1,0 +1,74 @@
+<!-- <div class=back>
+    <div class="form">
+        <div class="form__box">
+
+            <div class="form__left">
+
+                <div class="form__padding"><img class="form__image"
+                        src="https://images.unsplash.com/photo-1624623306028-9c536fd89960?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHJvdW5kfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" />
+                </div>
+            </div>
+            <div class="form__right">
+                <div class="form__padding-right">
+                    <form name="userlogin" #myForm="ngForm" (ngSubmit)="validateUser()">
+                        <h1 class="form__title">Admin Login</h1>
+                        <label for="email">Email</label>
+                        <input class="form__email" type="email" name="email" placeholder="Email"
+                            [(ngModel)]="user.email" required #email="ngModel"
+                            [ngClass]="{ 'is-invalid': myForm.submitted && name.invalid }" required />
+                        <small class="text-danger" [class.d-none]="email.valid || email.touched">&nbsp; **Enter a valid
+                            email
+                            ID</small>
+                        <label for="password">Password</label>
+                        <input class="form__password" type="password" name="password" placeholder="******"
+                            [(ngModel)]="user.password" minlength="6" required #password="ngModel" />
+                        <input class="form__submit-btn " type="submit" value="Login" [disabled]="myForm.form.invalid" />
+                    </form>
+                    <div class="lower">
+                        <a class="form__link" href="signup">Create your account</a>
+                        <a href="login"><button class="button">User</button></a>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<body>
+    <section>
+        <div class="container">
+
+            <div class="user signupBx">
+                <div class="formBx">
+                    <form name="userlogin" #adminlogin="ngForm" (ngSubmit)="validateUser()">
+                        <h2>Admin Login</h2>
+
+                        <input type="email" name="email" [(ngModel)]="user.email" #email="ngModel" required
+                            pattern="^[a-z0-9+_.-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+                            [class.is-invalid]="email.invalid && email.touched" placeholder="Email Address" />
+                        <small [class.d-none]="email.valid ">Enter valid email</small>
+                        <input type="password" name="password" placeholder="Password" [(ngModel)]="user.password"
+                            #password="ngModel" required [class.is-invalid]="password.invalid && password.touched"
+                            minlength="6" />
+                        <small [class.d-none]="password.valid ">Enter valid Password</small><br><br>
+                        <button class="bt btn btn-primary" [disabled]="adminlogin.form.invalid" type="submit" name=""
+                            value="Sign In">Sign In </button>
+                        <p class=" signup">
+                            Already have an account ?
+                            <a href="login">Sign in.</a>
+                        </p>
+                    </form>
+                </div>
+                <div class="imgBx"><img
+                        src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Login%20and%20Registration%20Form/img2.jpg"
+                        alt="" />
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>

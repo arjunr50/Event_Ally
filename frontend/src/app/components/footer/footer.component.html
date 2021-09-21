@@ -1,0 +1,126 @@
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-muted">
+    <!-- Section: Social media -->
+
+
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3"></i>EventAlly
+                    </h6>
+                    <p>
+                        The place where you can explore.<br>
+
+                        The place whre you can find your intrests in a professional manner
+                    </p>
+                    <div>
+                        <a href="" class="me-4 text-reset">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="" class="me-4 text-reset">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="me-4 text-reset">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="" class="me-4 text-reset">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="" class="me-4 text-reset">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="" class="me-4 text-reset">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Services
+                    </h6>
+                    <p>
+                        <a routerLink="login" class="text-reset" *ngIf="!_auth.loggedIn()">Events</a>
+                    </p>
+                    <p>
+                        <a routerLink="events" class="text-reset" *ngIf="_auth.loggedIn()">Events</a>
+                    </p>
+                    <p>
+                        <a routerLink="addEvent" class="text-reset" *ngIf="_auth.loggedIn()"
+                            routerLinkActive="active">Add Events</a>
+                    </p>
+                    <p>
+                        <a routerLink="login" class="text-reset" *ngIf="!_auth.loggedIn()" routerLinkActive="active">Add
+                            Events</a>
+                    </p>
+                    <p>
+                        <a routerLink="about" class="text-reset" routerLinkActive="active">About Us</a>
+
+                    </p>
+                    <p>
+                        <a href="#" class="text-reset">Contact Us</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Useful links
+                    </h6>
+                    <p>
+                        <a routerLink="terms" class="text-reset">Terms and Conditions</a>
+                    </p>
+                    <p>
+                        <a routerLink="privacy" class="text-reset">Privacy Policies</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">..</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Help</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Contact
+                    </h6>
+                    <p><i class="fas fa-home me-3"></i> Kottayam, Kerala, India</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        eventally.office@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 91 987 567 8845</p>
+
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->

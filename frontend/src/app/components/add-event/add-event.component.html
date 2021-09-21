@@ -1,0 +1,117 @@
+<!-- <div class=back>
+    <div class="form">
+        <div class="form__box">
+
+            <div class="form__right">
+                <div class="form__padding-right">
+                    <form #update="ngForm" (ngSubmit)="AddEvent()">
+                        <h1 class="form__title">Add Event</h1>
+                        <div>
+                            <label for="title">Event Name</label>
+                            <input class="title" type="text" value={{event.title}} [(ngModel)]="event.title"
+                                name="title" />
+                        </div>
+                        <div style="margin-top: 2px;">
+                            <label for="date">Event Date</label>
+                            <input class="date" style="margin-left:2px;" type="text" value={{event.date}}
+                                [(ngModel)]="event.date" name="date" />
+                        </div>
+                        <div>
+                            <label for="venue">Event Venue</label>
+                            <input class="venue" type="text" value={{event.venue}} [(ngModel)]="event.venue"
+                                name="venue" />
+                        </div>
+                        <div>
+                            <label for="organiser">Event Organiser</label>
+                            <input class="organiser" type="text" value={{event.organiser}} [(ngModel)]="event.organiser"
+                                name="organiser" />
+                        </div>
+                        <div>
+                            <label for="description">Event Description</label>
+                            <input class="description" type="text" value={{event.description}}
+                                [(ngModel)]="event.description" name="description" />
+                        </div>
+                        <div>
+                            <label for="image">Event Image URL</label>
+                            <input class="image" type="text" value={{event.image}} [(ngModel)]="event.image"
+                                name="image" />
+                        </div>
+                        <input class="form__submit-btn" type="submit" value="Add Event" />
+                    </form>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ -->
+
+<div class="bod">
+    <section class="contact-from pt-4">
+        <div class="container">
+
+            <div class="row mt-5">
+                <div class="col-md-7 mx-auto">
+                    <div class="form-wrapper">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Add Event</h4>
+                            </div>
+                        </div>
+                        <form #update="ngForm" (ngSubmit)="AddEvent()">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" value={{event.title}}
+                                            [(ngModel)]="event.title" name="title" placeholder="Event name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="date" class="form-control" value={{event.date}}
+                                            [(ngModel)]="event.date" name="date">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" value={{event.venue}}
+                                            [(ngModel)]="event.venue" name="venue" placeholder="Venue">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" value={{event.organiser}}
+                                            [(ngModel)]="event.organiser" name="organiser" placeholder="Organizer">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea type="text" class="form-control" value={{event.description}}
+                                            [(ngModel)]="event.description" name="description"
+                                            placeholder="Description">
+                                    </textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" value={{event.image}}
+                                            [(ngModel)]="event.image" name="image" placeholder="Image URl">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="mt-3">
+                                <button class="btn btn-primary" type="submit">Add Event</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>

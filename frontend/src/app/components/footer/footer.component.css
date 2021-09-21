@@ -1,0 +1,47 @@
+footer {
+  
+  background-color: rgb(0, 0, 0);
+  
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  
+}
+
+footer a {
+  color: #999;
+  text-decoration:none;
+}
+footer p {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+    position: center;
+    
+  }
+.has-text-centered {
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+    position: center;
+  }
+
+footer a:hover, footer a:focus {
+  color: #aaa;
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+
+
+/* Credits: https://www.codeply.com/p/EJd6H4Ejyi */
+.content{
+  text-align: center;
+}

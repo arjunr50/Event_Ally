@@ -6,21 +6,22 @@ import { User } from 'src/app/interfaces/user';
   providedIn: 'root'
 })
 export class AuthService {
-  private _loginUrl = "http://localhost:3000/login";
+  private _loginUrl: string = '/api';
+  // private _loginUrl = "http://localhost:3000/";
 
   registerUser(user: User) {
-    return this.http.post<any>("http://localhost:3000/register", user);
+    return this.http.post<any>(`this._loginUrl/register`, user);
   }
   validateUser(user: any) {
-    return this.http.post<any>("http://localhost:3000/adminLogin", user);
+    return this.http.post<any>(`this._loginUrl/adminLogin`, user);
   }
   validateUserLogin(user: any) {
-    return this.http.post<any>("http://localhost:3000/login", user);
+    return this.http.post<any>(`this._loginUrl/login`, user);
   }
 
   constructor(private http: HttpClient) { }
   loginUser(user: any) {
-    return this.http.post<any>(this._loginUrl, user)
+    return this.http.post<any>(`this._loginUrl/login`, user)
   }
 
   loggedIn() {

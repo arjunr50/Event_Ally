@@ -23,6 +23,7 @@ import { AboutComponent } from './components/about/about.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { AdminHomeComponent } from './components/admin-home/admin-home.component';
 import { AdminloginComponent } from './components/adminlogin/adminlogin.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 
@@ -45,7 +46,8 @@ import { AdminloginComponent } from './components/adminlogin/adminlogin.componen
     AboutComponent,
     NotfoundComponent,
     AdminHomeComponent,
-    AdminloginComponent
+    AdminloginComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

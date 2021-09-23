@@ -16,6 +16,7 @@ import { AboutComponent } from './components/about/about.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { AdminHomeComponent } from './components/admin-home/admin-home.component';
 import { AdminloginComponent } from './components/adminlogin/adminlogin.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: "terms", component: TermsComponent },
   { path: "privacy", component: PrivacyComponent },
   { path: "about", component: AboutComponent },
+  { path: "contact", component: ContactComponent },
   { path: "adminhome", component: AdminHomeComponent, canActivate: [AuthGuard] },
   { path: '404', component: NotfoundComponent }, { path: '**', component: NotfoundComponent }];
 

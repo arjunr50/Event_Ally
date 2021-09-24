@@ -10,18 +10,18 @@ export class AuthService {
   // private _loginUrl = "http://localhost:3000/";
 
   registerUser(user: User) {
-    return this.http.post<any>(`this._loginUrl/register`, user);
+    return this.http.post<any>(`${this._loginUrl}/register`, user);
   }
   validateUser(user: any) {
-    return this.http.post<any>(`this._loginUrl/adminLogin`, user);
+    return this.http.post<any>(`${this._loginUrl}/adminLogin`, user);
   }
   validateUserLogin(user: any) {
-    return this.http.post<any>(`this._loginUrl/login`, user);
+    return this.http.post<any>(`${this._loginUrl}/login`, user);
   }
 
   constructor(private http: HttpClient) { }
   loginUser(user: any) {
-    return this.http.post<any>(`this._loginUrl/login`, user)
+    return this.http.post<any>(`${this._loginUrl}/login`, user)
   }
 
   loggedIn() {

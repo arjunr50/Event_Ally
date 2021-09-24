@@ -10,14 +10,14 @@ export class EventsService {
   constructor(private http: HttpClient) { }
 
   getEvents() {
-    return this.http.get(`this.server_address/events`);
+    return this.http.get(`${this.server_address}/events`);
   }
   update(item: any) {
-    return this.http.post<any>(`this.server_address/update`, { "event": item })
+    return this.http.post<any>(`${this.server_address}/update`, { "event": item })
       .subscribe(data => { console.log(data) });
   }
   newEvent(item: any) {
-    return this.http.post<any>(`this.server_address/addevent`, { "event": item })
+    return this.http.post<any>(`${this.server_address}/addevent`, { "event": item })
       .subscribe(data => { console.log(data) });
   }
 
@@ -25,11 +25,11 @@ export class EventsService {
     return localStorage.getItem('owner');
   }
   delEve(item: any) {
-    return this.http.post<any>(`this.server_address/dlt`, { "event": item })
+    return this.http.post<any>(`${this.server_address}/dlt`, { "event": item })
       .subscribe(data => { console.log(data) });
   }
   searchEvent(item: any) {
-    return this.http.post<any>(`this.server_address/search`, { "event": item });
+    return this.http.post<any>(`${this.server_address}/search`, { "event": item });
 
   }
 }

@@ -1,5 +1,4 @@
-<div class="sp">
-    <!--
+<!--
 <div class="main"   *ngFor="let event of events;let i=index"[attr.data-index]="i"  >
     <div class="bg-image" [ngStyle]="{'background-image':'url(' +event.image+ ')'}"></div>
     <div class="bg-text">
@@ -9,68 +8,66 @@
 </div>
 </div>-->
 
-
-    <carousel>
-        <div class="carousel-cell" *ngFor="let event of events;let i=index" [attr.data-index]="i">
-            <img [src]="event.image" (click)="eventMore(i)" />
-            <div class="carousel-caption">
-                <h5>{{event.title}}</h5>
-            </div>
-        </div>
-    </carousel>
-
-    <div class="w3-col m2">
-        <div class="greet">
-            <p>Stay</p>
-            <p>updated</p>
-            <p>REGARDING</p>
-            <P>amazing</P>
-            <P>OPPORTUNITIES</P>
-            <P>around</P>
-            <P>you.</P>
-
-            <p>find </p>
-            <p>more</p>
-            <p>with</p>
-            <p>us.</p>
-        </div>
-
-    </div>
-    <div class="w3-col m5">
-        <div class="w3-container w3-card w3-white w3-round w3-margin" *ngFor="let event of events;let i=index"
-            [attr.data-index]="i"><br>
-            <div *ngIf="i%2==0"> <img [src]="event.image" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                <h4>{{event.title}}</h4><br>
-                <hr class="w3-clear">
-                <p>{{event.description}} </p>
-                <div class="w3-row-padding" style="margin:0 -16px">
-                    <div class="w3-half">
-                        <img [src]="event.image" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
-                    </div>
-
-                </div>
-                <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom" (click)="eventMore(i)">
-                    Details</button>
-            </div>
+<carousel>
+    <div class="carousel-cell" *ngFor="let event of events;let i=index" [attr.data-index]="i"
+        style="padding-left: 10px;padding-right: 10px;">
+        <img [src]="event.image" (click)="eventMore(i)" />
+        <div class="carousel-caption">
+            <h5>{{event.title}}</h5>
         </div>
     </div>
+</carousel>
+<div class="w3-col m2">
+    <div class="greet">
+        <p>Stay</p>
+        <p>updated</p>
+        <p>REGARDING</p>
+        <P>amazing</P>
+        <P>OPPORTUNITIES</P>
+        <P>around</P>
+        <P>you.</P>
 
-    <div class="w3-col m5">
-        <div class="w3-container w3-card w3-white w3-round w3-margin" *ngFor="let event of events;let i=index"
-            [attr.data-index]="i"><br>
-            <div *ngIf="i%2!=0"> <img [src]="event.image" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                <h4>{{event.title}}</h4><br>
-                <hr class="w3-clear">
-                <p>{{event.description}} </p>
-                <div class="w3-row-padding" style="margin:0 -16px">
-                    <div class="w3-half">
-                        <img [src]="event.image" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
-                    </div>
+        <p>find </p>
+        <p>more</p>
+        <p>with</p>
+        <p>us.</p>
+    </div>
 
+</div>
+<div class="w3-col m5">
+    <div class="w3-container w3-card w3-grey w3-round w3-margin" *ngFor="let event of events;let i=index"
+        [attr.data-index]="i"><br>
+        <div *ngIf="i%2==0"> <img [src]="event.image" class="w3-left w3-circle w3-margin-right" style="width:60px">
+            <h4>{{event.title}}</h4><br>
+            <hr class="w3-clear">
+            <p>{{event.description}} </p>
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half">
+                    <img [src]="event.image" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
                 </div>
-                <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom" (click)="eventMore(i)">
-                    Details</button>
+
             </div>
+            <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom" (click)="eventMore(i)">
+                Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="w3-col m5">
+    <div class="w3-container w3-card w3-grey w3-round w3-margin" *ngFor="let event of events;let i=index"
+        [attr.data-index]="i"><br>
+        <div *ngIf="i%2!=0"> <img [src]="event.image" class="w3-left w3-circle w3-margin-right" style="width:60px">
+            <h4>{{event.title}}</h4><br>
+            <hr class="w3-clear">
+            <p>{{event.description}} </p>
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half">
+                    <img [src]="event.image" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+                </div>
+
+            </div>
+            <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom" (click)="eventMore(i)">
+                Details</button>
         </div>
     </div>
 </div>

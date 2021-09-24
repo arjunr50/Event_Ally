@@ -12,5 +12,5 @@
         <div class="col-sm"><i class="fas fa-calendar-day" style="margin: 2%;padding:2%"> {{event.date}}</i></div>
         <div class="col-sm" style="margin: 1%;"><b>Organised by {{event.organiser}}</b></div>
     </div>
-    <button style="margin: 2%" (click)="update()" class="btn btn-lg btn-primary">Update</button>
+    <button style="margin: 2%" *ngIf="check()" (click)="update()" class="btn btn-lg btn-primary">Update</button>
 </div>

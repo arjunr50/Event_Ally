@@ -20,6 +20,7 @@ export class EventsService {
     return this.http.post<any>(`this.server_address/addevent`, { "event": item })
       .subscribe(data => { console.log(data) });
   }
+
   getO() {
     return localStorage.getItem('owner');
   }
@@ -28,7 +29,6 @@ export class EventsService {
       .subscribe(data => { console.log(data) });
   }
   searchEvent(item: any) {
-
     return this.http.post<any>(`this.server_address/search`, { "event": item });
 
   }
